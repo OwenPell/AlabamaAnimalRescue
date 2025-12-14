@@ -1,0 +1,368 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f4f7fb;
+  color: #1a202c;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  background: #ffffff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+  padding: 1.25rem 1.5rem 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.donate-btn {
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.donate-btn:hover,
+.donate-btn:focus {
+  background: #1d4ed8;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper input[type="search"] {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5f5;
+  min-width: 180px;
+}
+
+nav {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+  padding-bottom: 0.35rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  color: #334155;
+  background: #e5ecff;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+main {
+  background: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06);
+}
+
+aside {
+  background: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06);
+}
+
+aside h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+aside section + section {
+  margin-top: 1.25rem;
+}
+
+.section-heading {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: #1e3a8a;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  margin: 0.75rem 0 0.35rem;
+  color: #0f172a;
+}
+
+.lead {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.animal-of-day {
+  display: grid;
+  grid-template-columns: minmax(0, 200px) minmax(0, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #e0f2fe;
+}
+
+.animal-of-day img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.animal-of-day h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.35rem;
+  color: #1e3a8a;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.animal-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 0.85rem;
+  border: 1px solid #e5e7eb;
+}
+
+.animal-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.animal-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #0f172a;
+}
+
+.favorite-btn {
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.favorite-btn.favorited {
+  background: #ffe4e6;
+  border-color: #fb7185;
+  color: #b91c1c;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.filter-controls label {
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.animal-meta {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.35rem;
+}
+
+.animal-description {
+  font-size: 0.9rem;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-row-inline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+button[type="submit"] {
+  margin-top: 0.35rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background: #16a34a;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.faq-item {
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 0.9rem 1rem;
+}
+
+.faq-question {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.25rem;
+  border-top: 1px solid #d1d5db;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.footer-nav {
+  margin-bottom: 0.4rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  margin: 0 0.4rem;
+  color: #2563eb;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  text-decoration: underline;
+}
+
+.footer-authors {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.footer-contact {
+  font-size: 0.85rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+@media (max-width: 800px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-of-day {
+    grid-template-columns: 1fr;
+  }
+}

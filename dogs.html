@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alabama Animal Rescue – Dogs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-top">
+        <div class="site-title">Alabama Animal Rescue</div>
+        <div class="header-actions">
+          <a href="index.html#donate" class="donate-btn">Donate Today</a>
+          <div class="search-wrapper">
+            <label class="sr-only" for="site-search">Search the site</label>
+            <input type="search" id="site-search" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html" class="active">Dogs</a></li>
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-layout">
+      <main>
+        <section>
+          <h1 class="section-heading">Adoptable Dogs</h1>
+          <p class="lead">
+            Meet the dogs currently available for adoption. Each one has a unique story and is
+            looking for a safe, loving home.
+          </p>
+          <div class="filter-controls">
+            <label for="breed-filter">Filter by breed:</label>
+            <select id="breed-filter">
+              <option value="all">All breeds</option>
+              <option value="Labrador Mix">Labrador Mix</option>
+              <option value="Terrier Mix">Terrier Mix</option>
+              <option value="Golden Retriever">Golden Retriever</option>
+              <option value="Cattle Dog Mix">Cattle Dog Mix</option>
+              <option value="Beagle Mix">Beagle Mix</option>
+              <option value="Shepherd Mix">Shepherd Mix</option>
+            </select>
+
+            <label for="age-filter">Filter by age:</label>
+            <select id="age-filter">
+              <option value="all">All ages</option>
+              <option value="0-1">0–1 years</option>
+              <option value="1-3">1–3 years</option>
+              <option value="3-6">3–6 years</option>
+              <option value="6+">6+ years</option>
+            </select>
+
+            <button id="clear-filters">Reset</button>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="subheading">Our Dogs</h2>
+
+          <div class="animal-grid">
+            <article class="animal-card" data-breed="Labrador Mix" data-age="3" data-id="buddy">
+              <img src="images/dog1.jpg" alt="Brown and white dog named Buddy" />
+              <h3>Buddy</h3>
+              <p class="animal-meta">3 years • Labrador Mix</p>
+              <p class="animal-description">
+                Friendly and energetic, Buddy loves fetch and long walks. Great with older kids and
+                other dogs.
+              </p>
+              <button class="favorite-btn" data-id="buddy" aria-pressed="false">♡ Favorite</button>
+            </article>
+
+            <article class="animal-card" data-breed="Terrier Mix" data-age="1" data-id="luna">
+              <img src="images/dog2.jpg" alt="Small black dog named Luna" />
+              <h3>Luna</h3>
+              <p class="animal-meta">1 year • Terrier Mix</p>
+              <p class="animal-description">
+                A shy sweetheart who warms up quickly with gentle attention. Ideal for a quieter home.
+              </p>
+              <button class="favorite-btn" data-id="luna" aria-pressed="false">♡ Favorite</button>
+            </article>
+
+            <article class="animal-card" data-breed="Golden Retriever" data-age="5" data-id="max">
+              <img src="images/dog3.jpg" alt="Golden dog named Max" />
+              <h3>Max</h3>
+              <p class="animal-meta">5 years • Golden Retriever</p>
+              <p class="animal-description">
+                Calm and affectionate, Max enjoys naps in the sun and leisurely strolls around the
+                neighborhood.
+              </p>
+              <button class="favorite-btn" data-id="max" aria-pressed="false">♡ Favorite</button>
+            </article>
+
+            <article class="animal-card" data-breed="Cattle Dog Mix" data-age="2" data-id="rosie">
+              <img src="images/dog4.jpg" alt="Spotted dog named Rosie" />
+              <h3>Rosie</h3>
+              <p class="animal-meta">2 years • Cattle Dog Mix</p>
+              <p class="animal-description">
+                Smart and active, Rosie thrives with a job to do and would be perfect for an active
+                family.
+              </p>
+              <button class="favorite-btn" data-id="rosie" aria-pressed="false">♡ Favorite</button>
+            </article>
+
+            <article class="animal-card" data-breed="Beagle Mix" data-age="4" data-id="cooper">
+                <img src="images/dog5.jpg" alt="White and tan dog named Cooper" />
+                <h3>Cooper</h3>
+                <p class="animal-meta">4 years • Beagle Mix</p>
+                <p class="animal-description">
+                Cooper is curious, loves to follow his nose, and does great on a leash. He would do
+                well with an active owner who enjoys walks and hikes.
+                </p>
+                <button class="favorite-btn" data-id="cooper" aria-pressed="false">♡ Favorite</button>
+            </article>
+
+            <article class="animal-card" data-breed="Shepherd Mix" data-age="2" data-id="bella">
+                <img src="images/dog6.jpg" alt="Black and tan dog named Bella" />
+                <h3>Bella</h3>
+                <p class="animal-meta">2 years • Shepherd Mix</p>
+                <p class="animal-description">
+                Bella is loyal and eager to learn. She already knows a few basic commands and would be
+                a great companion for someone willing to keep training with her.
+                </p>
+                <button class="favorite-btn" data-id="bella" aria-pressed="false">♡ Favorite</button>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <section>
+          <h2>Volunteer with Us</h2>
+          <p>
+            Dog walkers and foster families are always needed. Helping with daily walks and short-term
+            fostering keeps our dogs happy and socialized.
+          </p>
+        </section>
+
+        <section>
+          <h2>Operating Hours</h2>
+          <ul>
+            <li>Adoption Meetups by Appointment</li>
+            <li>Saturday Events: 11:00am – 2:00pm</li>
+          </ul>
+          <p>Check our FAQ or contact us for upcoming adoption event dates.</p>
+        </section>
+        <section>
+          <h2>Random Dog Fact</h2>
+          <p id="dog-fact"></p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Home</a> |
+        <a href="dogs.html">Dogs</a> |
+        <a href="cats.html">Cats</a> |
+        <a href="contact.html">Contact Us</a> |
+        <a href="faq.html">FAQ</a>
+      </div>
+      <p class="footer-authors">
+        Site by Owen Pell • Ryan Cornelison • Trilla McKee
+      </p>
+      <p class="footer-contact">
+        Contact: info@alabamaanimalrescue.org · (555) 123-4567
+      </p>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+  <script src="dogFacts.js"></script>
+</body>
+</html>

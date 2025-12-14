@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alabama Animal Rescue – Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-top">
+        <div class="site-title">Alabama Animal Rescue</div>
+        <div class="header-actions">
+          <a href="index.html#donate" class="donate-btn">Donate Today</a>
+          <div class="search-wrapper">
+            <label class="sr-only" for="site-search">Search the site</label>
+            <input type="search" id="site-search" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-layout">
+      <main>
+        <section>
+          <h1 class="section-heading">Contact Us</h1>
+          <p class="lead">
+            Have questions about adoption, volunteering, or donations? Send us a message and a
+            team member will reach out.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="subheading">Send a Message</h2>
+
+          <form id="contactForm">
+            <div class="form-row-inline">
+              <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-row-inline">
+              <div>
+                <label for="phone">Phone Number (optional)</label>
+                <input type="text" id="phone" name="phone" />
+              </div>
+              <div>
+                <label for="topic">Reason for Reaching Out</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Please select…</option>
+                  <option value="adoption">Adoption</option>
+                  <option value="volunteering">Volunteering</option>
+                  <option value="donations">Donations</option>
+                  <option value="community-outreach">Community Outreach</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+
+        <section>
+          <h2 class="subheading">Other Ways to Reach Us</h2>
+          <p>
+            Email: <strong>info@alabamaanimalrescue.org</strong><br />
+            Phone: <strong>(555) 123-4567</strong>
+          </p>
+          <p>
+            Mailing Address:<br />
+            Alabama Animal Rescue<br />
+            123 Rescue Lane<br />
+            Huntsville, AL 35801
+          </p>
+        </section>
+      </main>
+
+      <aside>
+        <section>
+          <h2>Volunteer with Us</h2>
+          <p>
+            Fill out the contact form and select “Volunteering” to learn more about fostering, event
+            support, and hands-on roles.
+          </p>
+        </section>
+
+        <section>
+          <h2>Operating Hours</h2>
+          <ul>
+            <li>Phone &amp; Email: Mon – Fri, 9:00am – 4:00pm</li>
+            <li>In-person visits by appointment only</li>
+          </ul>
+          <p>We strive to respond to all messages within 2–3 business days.</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Home</a> |
+        <a href="dogs.html">Dogs</a> |
+        <a href="cats.html">Cats</a> |
+        <a href="contact.html">Contact Us</a> |
+        <a href="faq.html">FAQ</a>
+      </div>
+      <p class="footer-authors">
+        Site by Owen Pell • Ryan Cornelison • Trilla McKee
+      </p>
+      <p class="footer-contact">
+        Contact: info@alabamaanimalrescue.org · (555) 123-4567
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you for reaching out! We’ll be in touch within 2–3 business days.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
